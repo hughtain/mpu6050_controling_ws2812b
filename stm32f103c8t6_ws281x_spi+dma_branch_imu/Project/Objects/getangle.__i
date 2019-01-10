@@ -1,0 +1,6 @@
+--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Chip\chip -I..\Chip\delay -I..\Chip\timer -I..\Chip\usart -I..\Chip\spi -I..\User -I..\Board\HC-SR501 -I..\Board\photoresistor -I..\Chip\i2c -I..\Board\mpu6050
+-I C:\Users\dadao\Desktop\ledµÆ´ø¿ª·¢\stm32f103c8t6_ws281x_spi+dma+mpu6050\stm32f103c8t6_ws281x_spi+dma\Project\RTE
+-I C:\mdk5_install\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include
+-I C:\mdk5_install\ARM\CMSIS\Include
+-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD
+-o .\objects\getangle.o --omf_browse .\objects\getangle.crf --depend .\objects\getangle.d "..\Board\mpu6050\getangle.c"
