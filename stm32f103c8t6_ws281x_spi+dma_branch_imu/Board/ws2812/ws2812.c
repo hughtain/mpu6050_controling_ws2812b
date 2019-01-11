@@ -1,6 +1,7 @@
 #include "../BOARD/ws2812/ws2812.h"
 #include "bsp_usart1.h"
 #include "delay.h"
+#include "math.h"
 
 uint8_t pixelBuffer[PIXEL_NUM][24] ;
  
@@ -14,7 +15,6 @@ void ws281x_init(void)
 	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA, ENABLE); 
 	RCC_APB2PeriphClockCmd(RCC_APB2Periph_SPI1, ENABLE); 
 	RCC_AHBPeriphClockCmd(RCC_AHBPeriph_DMA1, ENABLE);	
-
 
   /* PA7  SPI1_MOSI */
 	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_7;
@@ -71,6 +71,7 @@ void ws281x_closeAll(void)
   ws281x_show(); 
 }
 
+//
 //将三原色三个八位数据合并为24位数据
 uint32_t ws281x_color(uint8_t red, uint8_t green, uint8_t blue)
 {
@@ -276,38 +277,37 @@ void Show_PowerQuantity(uint8_t n)
 //假设超声测距最远距离2000
 void LightUp_Distance(uint32_t distance)
 {
-	ws281x_closeAll();
 
+	uint32_t s;
 	for(uint8_t i = 0; i < PIXEL_NUM; i ++)
 	{
 		if(distance == 0)
 		{
-			ws281x_setPixelColor(i, ws281x_color(255, 0, 0) );
+			ws281x_setPixelColor(i, ws281x_color(50, 0, 0) );
 		}
-		if(distance > 19891)
+		if(distance > 19890)
 		{
-			ws281x_setPixelColor(i, ws281x_color(0, 0, 255) );
+			ws281x_setPixelColor(i, ws281x_color(0, 0,50) );
 		}
-		
-		//都是BUG DOWN BELOW
-		//亮一个，渐变一个红色到粉红色再到白色
-//		if(distance > 0 && distance < 19891)
+//		if(distance > 13260 && distance < 19891)
 //		{
-//			for(uint32_t k = 0; k < 256; k ++)
-//			{
-//				for(uint32_t j = 0; j < distance; j ++)
-//					{
-//					
-//						ws281x_setPixelColor(i, ws281x_wheel((j * 256/distance)&255 ) + k);
-//					}
-//				ws281x_show();
-//			}
-		    
+//			ws281x_setPixelColor(i, ws281x_color(45, 5, 0) );
+//		}
+//		if(distance > 6630 && distance < 13261)
+//		{
+//			ws281x_setPixelColor(i, ws281x_color(0, 5, 45) );
+//		}
+		
+		if(distance < 19891 && distance > 0)
+		{
+			s = (19890 - distance)/255;
+			ws281x_setPixelColor(i, ws281x_color(s , (s / 2), 78 - s) );
 		}
+
+	}
+	ws281x_show();
+	delay_ms(12); 
       
 	}	
   
     
-}
-
-

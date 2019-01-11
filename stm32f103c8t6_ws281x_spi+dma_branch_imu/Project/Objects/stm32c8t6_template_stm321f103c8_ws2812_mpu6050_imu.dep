@@ -850,8 +850,8 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h)(0x559784E0)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x559784E0)
 I (..\Chip\i2c\bsp_i2c.h)(0x537048E3)
 I (C:\mdk5_install\ARM\ARMCC\include\inttypes.h)(0x5475F2FA)
-F (..\Board\ws2812\ws2812.c)(0x5C373B5C)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Chip\chip -I..\Chip\delay -I..\Chip\timer -I..\Chip\usart -I..\Chip\spi -I..\User -I..\Board\HC-SR501 -I..\Board\photoresistor -I..\Chip\i2c -I..\Board\mpu6050 -I..\Board\mpu6050-I C:\Users\dadao\Desktop\led灯带开发\stm32f103c8t6_ws281x_spi+dma+mpu6050\stm32f103c8t6_ws281x_spi+dma_branch_imu\Project\RTE-I C:\mdk5_install\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include-I C:\mdk5_install\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o .\objects\ws2812.o --omf_browse .\objects\ws2812.crf --depend .\objects\ws2812.d)
-I (..\User\../BOARD/ws2812/ws2812.h)(0x5C37162C)
+F (..\Board\ws2812\ws2812.c)(0x5C381345)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Chip\chip -I..\Chip\delay -I..\Chip\timer -I..\Chip\usart -I..\Chip\spi -I..\User -I..\Board\HC-SR501 -I..\Board\photoresistor -I..\Chip\i2c -I..\Board\mpu6050 -I..\Board\mpu6050-I C:\Users\dadao\Desktop\led灯带开发\stm32f103c8t6_ws281x_spi+dma+mpu6050\stm32f103c8t6_ws281x_spi+dma_branch_imu\Project\RTE-I C:\mdk5_install\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include-I C:\mdk5_install\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o .\objects\ws2812.o --omf_browse .\objects\ws2812.crf --depend .\objects\ws2812.d)
+I (..\User\../BOARD/ws2812/ws2812.h)(0x5C382234)
 I (..\Libraries\CMSIS\stm32f10x.h)(0x559784E0)
 I (..\Libraries\CMSIS\core_cm3.h)(0x559784E0)
 I (C:\mdk5_install\ARM\ARMCC\include\stdint.h)(0x5475F300)
@@ -883,6 +883,7 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x559784E0)
 I (..\Chip\usart\bsp_usart1.h)(0x5C2EEE69)
 I (C:\mdk5_install\ARM\ARMCC\include\stdio.h)(0x5475F300)
 I (..\Chip\delay\delay.h)(0x5A6EDC74)
+I (C:\mdk5_install\ARM\ARMCC\include\math.h)(0x5475F2FE)
 F (..\Board\mpu6050\mpu6050.c)(0x5C301160)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Chip\chip -I..\Chip\delay -I..\Chip\timer -I..\Chip\usart -I..\Chip\spi -I..\User -I..\Board\HC-SR501 -I..\Board\photoresistor -I..\Chip\i2c -I..\Board\mpu6050 -I..\Board\mpu6050-I C:\Users\dadao\Desktop\led灯带开发\stm32f103c8t6_ws281x_spi+dma+mpu6050\stm32f103c8t6_ws281x_spi+dma_branch_imu\Project\RTE-I C:\mdk5_install\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include-I C:\mdk5_install\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o .\objects\mpu6050.o --omf_browse .\objects\mpu6050.crf --depend .\objects\mpu6050.d)
 I (..\Board\mpu6050\mpu6050.h)(0x53704951)
 I (..\Libraries\CMSIS\stm32f10x.h)(0x559784E0)
@@ -951,7 +952,7 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x559784E0)
 I (..\Chip\usart\bsp_usart1.h)(0x5C2EEE69)
 I (C:\mdk5_install\ARM\ARMCC\include\stdio.h)(0x5475F300)
 I (..\Board\mpu6050\mpu6050.h)(0x53704951)
-F (..\User\main.c)(0x5C372F0B)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Chip\chip -I..\Chip\delay -I..\Chip\timer -I..\Chip\usart -I..\Chip\spi -I..\User -I..\Board\HC-SR501 -I..\Board\photoresistor -I..\Chip\i2c -I..\Board\mpu6050 -I..\Board\mpu6050-I C:\Users\dadao\Desktop\led灯带开发\stm32f103c8t6_ws281x_spi+dma+mpu6050\stm32f103c8t6_ws281x_spi+dma_branch_imu\Project\RTE-I C:\mdk5_install\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include-I C:\mdk5_install\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+F (..\User\main.c)(0x5C382234)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Chip\chip -I..\Chip\delay -I..\Chip\timer -I..\Chip\usart -I..\Chip\spi -I..\User -I..\Board\HC-SR501 -I..\Board\photoresistor -I..\Chip\i2c -I..\Board\mpu6050 -I..\Board\mpu6050-I C:\Users\dadao\Desktop\led灯带开发\stm32f103c8t6_ws281x_spi+dma+mpu6050\stm32f103c8t6_ws281x_spi+dma_branch_imu\Project\RTE-I C:\mdk5_install\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include-I C:\mdk5_install\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
 I (..\Libraries\CMSIS\stm32f10x.h)(0x559784E0)
 I (..\Libraries\CMSIS\core_cm3.h)(0x559784E0)
 I (C:\mdk5_install\ARM\ARMCC\include\stdint.h)(0x5475F300)
@@ -981,7 +982,7 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x559784E0)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h)(0x559784E0)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x559784E0)
 I (..\User\stm32f10x_it.h)(0x5C2F1BE7)
-I (..\User\../BOARD/ws2812/ws2812.h)(0x5C37162C)
+I (..\User\../BOARD/ws2812/ws2812.h)(0x5C382234)
 I (..\Chip\usart\bsp_usart1.h)(0x5C2EEE69)
 I (C:\mdk5_install\ARM\ARMCC\include\stdio.h)(0x5475F300)
 I (..\Chip\delay\delay.h)(0x5A6EDC74)
@@ -992,7 +993,7 @@ I (..\User\../BOARD/mpu6050/IMU.h)(0x5C34889D)
 I (C:\mdk5_install\ARM\ARMCC\include\math.h)(0x5475F2FE)
 F (..\User\stm32f10x_it.c)(0x5C2F1BE7)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\Chip\chip -I..\Chip\delay -I..\Chip\timer -I..\Chip\usart -I..\Chip\spi -I..\User -I..\Board\HC-SR501 -I..\Board\photoresistor -I..\Chip\i2c -I..\Board\mpu6050 -I..\Board\mpu6050-I C:\Users\dadao\Desktop\led灯带开发\stm32f103c8t6_ws281x_spi+dma+mpu6050\stm32f103c8t6_ws281x_spi+dma_branch_imu\Project\RTE-I C:\mdk5_install\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include-I C:\mdk5_install\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o .\objects\stm32f10x_it.o --omf_browse .\objects\stm32f10x_it.crf --depend .\objects\stm32f10x_it.d)
 I (..\User\stm32f10x_it.h)(0x5C2F1BE7)
-I (..\User\../BOARD/ws2812/ws2812.h)(0x5C37162C)
+I (..\User\../BOARD/ws2812/ws2812.h)(0x5C382234)
 I (..\Libraries\CMSIS\stm32f10x.h)(0x559784E0)
 I (..\Libraries\CMSIS\core_cm3.h)(0x559784E0)
 I (C:\mdk5_install\ARM\ARMCC\include\stdint.h)(0x5475F300)
@@ -1051,7 +1052,7 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x559784E0)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h)(0x559784E0)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x559784E0)
 I (..\User\stm32f10x_it.h)(0x5C2F1BE7)
-I (..\User\../BOARD/ws2812/ws2812.h)(0x5C37162C)
+I (..\User\../BOARD/ws2812/ws2812.h)(0x5C382234)
 I (..\Chip\usart\bsp_usart1.h)(0x5C2EEE69)
 I (C:\mdk5_install\ARM\ARMCC\include\stdio.h)(0x5475F300)
 I (..\Chip\delay\delay.h)(0x5A6EDC74)

@@ -25,16 +25,15 @@ int main(void)
 	ws281x_init();
 	i2c_GPIO_Config();
 	MPU6050_Init();
-
-	ws281x_closeAll();
+//	ws281x_closeAll();
 
 	while(1)
 	{
 	//  ws281x_colorWipe(ws281x_color(0, 2, 0), 40);
-		//Alternate_RedNBlue();
+//		Alternate_RedNBlue();
 	
 		//Show_PowerQuantity(23);
-		LightUp_Distance(15000);
+		LightUp_Distance(19000);
 
 	}
 

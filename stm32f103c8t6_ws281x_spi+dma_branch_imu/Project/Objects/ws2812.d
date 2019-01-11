@@ -32,3 +32,4 @@
 .\objects\ws2812.o: ..\Chip\usart\bsp_usart1.h
 .\objects\ws2812.o: C:\mdk5_install\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\ws2812.o: ..\Chip\delay\delay.h
+.\objects\ws2812.o: C:\mdk5_install\ARM\ARMCC\Bin\..\include\math.h
